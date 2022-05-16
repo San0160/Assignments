@@ -1,3 +1,6 @@
+//Calculator Program
+
+
 #include <iostream>
 using namespace std;
 int main()
@@ -32,4 +35,122 @@ int main()
         cout<<"Worng choice Bitch!!!1Die";
     }
 return 0;
+}
+***********************************************************************************************************************************************
+ // Celsius to fahrenheit conversion
+#include<iostream>
+using namespace std;
+ 
+int main()
+{
+    float fahren, cel;
+ 
+    cout << "Enter the temperature in Celsius : ";
+    cin >> cel;
+    fahren = (cel * 9.0) / 5.0 + 32;            //Multiply by 1.8(9/5) and add 32
+    cout << "The temperature in Fahrenheit : " << fahren << endl;
+    return 0;
+}
+***********************************************************************************************************************************************
+
+ // Area amd Perimeter of rectangle
+#include<iostream>
+using namespace std;
+ 
+int main()
+{
+    float l,b;
+    cout << "Enter the dimentions : ";
+    cin >>l>>b;
+    cout << "The Area is : " << l*b << endl;
+    cout << "The Perimeter is : " << 2 * ( l + b) << endl;
+    return 0;
+}
+
+***********************************************************************************************************************************************
+
+// Swaping without 3rd variable
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+int a=5, b=10;      
+cout<<"Before swap a= "<<a<<" b= "<<b<<endl;      
+a=a*b; //a=50 (5*10)    
+b=a/b; //b=5 (50/10)    
+a=a/b; //a=10 (50/5)    
+cout<<"After swap a= "<<a<<" b= "<<b<<endl;      
+return 0;  
+}
+
+*********************************************************************************************************************************************
+
+// Vowel or Constant
+#include <iostream>  
+using namespace std;  
+int main()  
+{  
+char ch;
+cout<<"Enter a character"<<endl;      
+cin>>ch;
+if (ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+{
+    cout<<"Its a vovel"<<endl;
+}
+else
+{
+    cout<<"Its a constant"<<endl;
+}
+return 0;  
+}
+
+**********************************************************************************************************************************************
+
+// Largest of Three Numbers
+#include <iostream>
+using namespace std;
+int main(){
+    int a, b, c;
+
+    cout << "Enter the 3 number: ";
+    cin >> a >> b >> c;
+    
+    if (a > b && a > c)
+    {
+        cout << a << " is the largest number.";
+    }
+    if (b > a && b > c)
+    {
+        cout << b << " is the largest number.";
+    }
+    if (c > a && c > b)
+    {
+        cout << c << " is the largest number.";
+    }
+    return 0;
+}
+
+**********************************************************************************************************************************************
+
+// Quotient and Remainder
+#include <iostream>
+using namespace std;
+
+int main()
+{    
+    int divisor, dividend, quotient, remainder;
+
+    cout << "Enter dividend: ";
+    cin >> dividend;
+
+    cout << "Enter divisor: ";
+    cin >> divisor;
+
+    quotient = dividend / divisor;
+    remainder = dividend % divisor;
+
+    cout << "Quotient = " << quotient << endl;
+    cout << "Remainder = " << remainder;
+
+    return 0;
 }
