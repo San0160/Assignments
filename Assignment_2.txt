@@ -1,0 +1,215 @@
+
+
+// Area and Square Checking
+#include <iostream>
+using namespace std;
+
+int main()
+{    
+    int len, wid;
+
+    cout << "Enter the dimentions ";
+    cin >> len >> wid;
+
+if (len == wid)
+{
+    cout << "Its a square\n";
+}
+    cout << "Area = " << len * wid << endl;
+
+    return 0;
+}
+
+***********************************************************************************************************************************************
+
+// Discount Program
+#include <iostream>
+using namespace std;
+
+int main()
+{    
+    int q;
+
+    cout << "Enter the quantity of the product ";
+    cin >> q;
+
+if (q >= 1000)
+{
+    cout << "U get a DISCOUNT of 10%\n";
+    cout << "That will be :"<< (q*100) * 1/10 << endl;
+}
+else
+{
+    cout << "That will be " << q * 100 << endl;
+}
+    return 0;
+}
+
+***********************************************************************************************************************************************
+
+// Marks Program
+#include <iostream>
+using namespace std;
+
+int main()
+{    
+    int m;
+
+    cout << "Enter the Marks ";
+    cin >> m;
+
+if (m >= 80)
+{
+    cout << "The Grade is A"<<endl;
+}
+else if (m >= 60 && m < 80)
+{
+    cout << "The Grade is B"<<endl;
+} 
+else if (m >= 50 && m < 60)
+{
+    cout << "The Grade is c"<<endl;
+}
+else if (m >= 45 && m < 50)
+{
+    cout << "The Grade is D"<<endl;
+}
+else if (m >= 25 && m < 45)
+{
+    cout << "The Grade is E"<<endl;
+}
+else if (m < 25)
+{
+    cout << "Ya Failed YOU IDIOT!!! GO Fuckin Study!!!!"<<endl;
+}
+else
+{
+    cout << "Enter a valid Marks Between 1 to 100" << endl;
+}
+    return 0;
+}
+
+**********************************************************************************************************************************************
+
+// Attandance Program
+#include <iostream>
+using namespace std;
+
+int main()
+{    
+    float n,t,f;
+
+    cout << "The Number of classes held is : "<<endl;
+    cin >> n;
+    cout << "The number of classes u took is :"<<endl;
+    cin >> t;
+    f = (t/n) * 100;
+    cout << "You attended percent is\t" << f <<"%"<<endl;
+    if (f >= 75)
+    {
+        cout << "U can attend ur Finals"<<endl;
+    }
+    else
+    {
+        cout << "No FInlas for U Ya lil shite"<<endl;
+    }
+    return 0;
+}
+ *********************************************************************************************************************************************
+
+ // Uppercase or Lowercase
+ #include<iostream.h>
+ 
+int main()
+{
+   char ch;
+ 
+   cout <<"\nEnter The Character : "<<endl;
+   cin >> ch;
+ 
+   if (ch >= 'A' && ch <= 'Z')
+      cout << "Character is Upper Case Letters"<<endl;
+   else
+      cout << "Character is Lower Case Letters"<<endl;
+   return (0);
+}
+
+**********************************************************************************************************************************************
+
+// Vowel Using Switch
+#include <iostream>
+using namespace std;
+int main()
+{
+    char ch;
+    cout<<"Enter any Alpabet\n";
+    cin>>ch;
+    switch(ch)
+    {
+    case 'a':
+    cout<<ch<<" is a vowel";
+    break;
+    case 'e':
+    cout<<ch<<" is a vowel";
+    break;
+    case 'i':
+    cout<<ch<<" is a vowel";
+    break;
+    case 'o':
+    cout<<ch<<" is a vowel";
+    break;
+    case 'u':
+    cout<<ch<<" is a vowel";
+    break;
+    default:
+    cout<<ch<<" is a consonant";
+    break;
+    }
+    return 0;
+}
+
+**********************************************************************************************************************************************
+
+// Even Fiding Using Loop
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i,a=0,l;
+    cout<< "Enter a limit\n"<<endl;
+    cin>> l;
+    cout << "Evens\n";
+    for(i = 0; i < l; i++)
+    {
+        if (i % 2 == 0)
+        cout << i << endl;
+    }
+    return 0;
+}
+
+**********************************************************************************************************************************************
+
+// Average of N Numbers using For loop
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int x, i;
+    float avg = 0, y;
+
+    cout << "Enter the number of elements to calculate the average::\n";
+    cin >> x;
+    
+    cout << "Enter " << x << " elements one by one\n\n";
+    for(i = 0; i < x; i++) {
+        cin >> y;
+        avg += y;
+    }
+
+    avg /= x;
+    cout << "\nThe average of the entered input numbers is = " << avg;
+    return 0;
+}
+
+**********************************************************************************************************************************************
