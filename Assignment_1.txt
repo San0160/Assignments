@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d;
+    cout<<"Enter the operation \n1) Addition\n2) subtraction\n3) Div\n4) Mul\nSelect a number\n"<<endl;
+    cin>>d;
+    cout<<"Enter the numbers\n";
+    cin>>a>>b;
+    if (d==1)
+    {
+        c=a+b;
+        cout<<"The sum of given Numbers is\t"<<c;
+    }
+    else if(d==2)
+    {
+        c=a-b;
+        cout<<"The difference of given Numbers is\t"<<c;
+    }
+    else if(d==3)
+    {
+        c=a/b;
+        cout<<"The quitent of given Numbers is\t"<<c;
+    }
+    else if(d==4)
+    {
+        c=a*b;
+        cout<<"The product of given Numbers is\t"<<c;
+    }
+    else
+    {
+        cout<<"Worng choice Bitch!!!1Die";
+    }
+return 0;
+}
