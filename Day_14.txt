@@ -1,0 +1,86 @@
+1) Reversing the elements in an array
+
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+void print(int arr[], int n)
+{
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+}
+ 
+void reverse(int arr[], int n) {
+    reverse(arr, arr + n);
+}
+ 
+int main()
+{
+    int arr[] = {3,5,2,5,7};
+
+    int n = sizeof(arr)/sizeof(arr[0]);
+ 
+    reverse(arr, n);
+    print(arr, n);
+ 
+    return 0;
+}
+
+***********************************************************************************************************************************************
+
+2)Programe to add and sub matrix 
+
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+   int i,j,a[10][10],b[10][10],c[10][10],d[10][10],n,m;
+   cout<<"Enter the Rows and Columns of Matrix A and B:"<<endl;
+   cin>>n>>m;
+   cout<<"\nEnter the Elements of Matrix A: \n";
+   for(i=0; i<n;i++)
+    {
+             for(j=0;j<m;j++)
+            {
+               cin>>a[i][j];
+            }
+    }
+    cout<<"Enter the Elements of Matrix B: \n";
+    for(i=0; i<n; i++)
+        {
+            for(j=0;j<m;j++ )
+                {
+                     cin>>b[i][j];
+                }
+        }
+        for(i=0; i<n; i++)
+            {
+                for(j=0;j<m ;j++)
+                    {
+                        c[i][j]=a[i][j]+b[i][j];
+                        d[i][j]=a[i][j]-b[i][j];
+                    }
+            }
+    cout<<"\nThe Resultant Matrix C=A+B is :\n";
+        for(i=0; i<n; i++)
+            {
+                for(j=0; j<m; j++ )
+                    {
+                        cout<<c[i][j]<<" ";
+                    }
+                    cout<<"\n";
+            }
+    cout<<"\n The Resultant Matrix D=A-B is : \n";
+        for(i=0; i<n; i++)
+            {
+                for (j=0; j<m; j++ )
+                    {
+                        cout<<d[i][j]<<" ";
+                    }
+                cout<<"\n";
+            }
+    return 0;
+}
+***************************************************************** END *************************************************************************
