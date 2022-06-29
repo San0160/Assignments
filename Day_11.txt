@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+int checkPrime(int n1, int index){
+   if(n1<2)
+   {
+      return 0;
+   }
+   if (n1 == 2 || n1==3){
+      return 1;
+   }
+
+   if (n1 % index == 0){
+      return 0;
+   }
+   if (index <= n1/2){
+      return 1;
+   }
+   int result=checkPrime(n1, index+1);
+
+   return (result);
+}
+int main(){
+   int Num ;
+   cout<< "Enter a number"<<endl;
+   cin>>Num;
+   if (checkPrime(Num,2)==1){
+      cout <<Num<<" is a Prime number !";
+   }
+   else{
+      cout <<Num<<" is non Prime!";
+   }
+
+   return 0;
+}
